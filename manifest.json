@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "No More Explore",
+  "description": "Remove the explore and reels page from the the Instagram webclient",
+  "version": "1.0.0",
+  "author": "Maximilian Hoenig",
+  "permissions": ["activeTab", "tabs", "alarms"],
+  "background": {
+    "service_worker": "/dist/src/index.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["/dist/src/remover.js"],
+      "matches": ["*://*.instagram.com/", "*://*.instagram.com/*"],
+      "run_at": "document_start"
+    }
+  ]
+}

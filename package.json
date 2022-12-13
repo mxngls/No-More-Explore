@@ -1,0 +1,15 @@
+{
+  "name": "no_more_explore",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "mxngls <Maximilian.e.hoenig@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chrome": "^0.0.204",
+    "typescript": "^4.9.4"
+  }
+}
